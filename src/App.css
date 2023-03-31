@@ -117,40 +117,24 @@ a {
   cursor: default;
 }
 
-.Heading {
-  font-size: 8rem;
+.proj-title-1 {
   color: #dedede;
-  font-family: "Unbounded", cursive;
-  text-align: center;
-  margin-bottom: 0.1rem;
+  font-size: 2rem;
+  margin: 3rem 4rem 0 0;
+  font-family: "Montserrat", sans-serif;
+  rotate: 3deg;
 }
 
-.subheading {
-  font-size: 4rem;
+.proj-title-2 {
   color: #dedede;
-  font-family: "Karla", sans-serif;
-  text-align: center;
-  margin-bottom: 3rem;
+  font-size: 2rem;
+  margin: 3rem 0 0 3rem;
+  font-family: "Montserrat", sans-serif;
+  rotate: -3deg;
 }
 
 a {
   text-decoration: none;
-}
-
-.back-to-home:hover {
-  transform: scale(1.2);
-  transition: 0.3s ease-in-out all;
-}
-
-.back-to-home {
-  font-family: "Karla", sans-serif;
-  transition: 0.3s ease-in-out all;
-  padding: 1rem;
-  font-size: 1.1rem;
-  color: #000000;
-  border-radius: 5px;
-  background-color: #ffffff;
-  height: auto;
 }
 
 .projects {
@@ -169,13 +153,15 @@ a {
 .project-section-1 {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .project-section-2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 10rem 0 8rem 0;
 }
 
@@ -209,7 +195,7 @@ a {
   display: inline-flex;
   align-items: center;
   transition: all ease-in-out 0.5s;
-  margin: 0 0 5rem 0;
+  margin: 0 0 5rem 3rem;
 }
 
 .view-all p {
@@ -361,7 +347,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 5rem 0;
   }
 
   .project-section-2 .proj-img {
@@ -382,13 +368,13 @@ a {
 
   .view-all {
     color: #dedede;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Tilliana Web", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 0.5s;
-    margin: 0 0 5rem 0;
+    margin: 0 0 4rem 0;
     width: 100%;
   }
 
@@ -401,5 +387,21 @@ a {
   .view-all:hover p {
     margin: 0 2rem 0 0;
     cursor: pointer;
+  }
+
+  .proj-title-1 {
+    color: #dedede;
+    font-size: 1.4rem;
+    margin: 1rem 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    rotate: 0deg;
+  }
+
+  .proj-title-2 {
+    color: #dedede;
+    font-size: 1.4rem;
+    margin: 1rem 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    rotate: 0deg;
   }
 }

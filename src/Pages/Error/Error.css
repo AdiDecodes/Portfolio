@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+
+.Error-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    padding: 0 2rem 0 2rem;
+}
+
+.Heading {
+    font-size: 6rem;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+}
+
+.back-to-home:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.back-to-home {
+    font-size: 10rem;
+    color: aliceblue;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease-in-out all;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    border-radius: 0.2rem;
+    background-color: #ffffff;
+    margin: 1.5rem 0 0 0;
+    border: 1px solid transparent;
+}

@@ -76,6 +76,7 @@ const Home = () => {
               data-aos-delay="100"
             >
               <img className="proj-img" src={sb} alt="" />
+              <div className="proj-title-1">SuperBattle</div>
             </div>
             <div
               className="project-section-2"
@@ -84,6 +85,7 @@ const Home = () => {
               data-aos-delay="200"
             >
               <img className="proj-img" src={cs} alt="" />
+              <div className="proj-title-2">CleverStudio</div>
             </div>
             <div
               className="view-all"
