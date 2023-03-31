@@ -1,12 +1,14 @@
 {
-  "name": "instaprofile",
-  "private": true,
-  "version": "0.0.0",
+  "name": "portfolio",
+  "private": false,
+  "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "server": "node Mailer.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -15,6 +17,7 @@
     "@react-email/render": "^0.0.6",
     "aos": "^2.3.4",
     "axios": "^1.3.4",
+    "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "framer-motion": "^7.10.2",
