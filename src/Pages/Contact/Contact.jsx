@@ -117,13 +117,12 @@ const Contact = () => {
           resetInputs();
         } else {
           updateToast("Failed to send!", false);
-          console.log(response);
           resetInputs();
         }
       } catch (error) {
         if (error.request) {
           updateToast("Error occured! Try again", false);
-          console.log(response);
+          console.log(error);
           resetInputs();
         }
       }
