@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,900&display=swap");
+
+
+body {
+  height: 100vh;
+}
+
+
+.work-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 9rem 0 9rem;
+  background-image: linear-gradient(to left, #000000, #231f2b);
+}
+
+.mainWork {
+  margin-top: 3rem;
+  width: -webkit-fill-available;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dedede;
+  border-radius: 0.4rem;
+  height: 15rem;
+  width: 15rem;
+  margin: 0 1rem 0 1rem;
+  align-items: center;
+  color: #000000;
+}
+
+.work-item>h3:hover {
+  transition: 0.3s ease-in-out all;
+  transform: scale(1.5);
+}
+
+.work-item>h3 {
+  font-family: "Montserrat";
+  transition: 0.3s ease-in-out all;
+}
+
+.work-heading {
+  font-size: 3rem;
+  font-family: "Average", serif;
+  margin: 2rem 2rem 2rem 10rem;
+  color: #eeeeee;
+  transition: 0.5s ease-in-out all;
+}
+
+.work-heading:hover {
+  color: orange;
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out all;
+}
+
+.w-heading {
+  font-size: 3rem;
+  color: #dedede;
+  font-family: "Unbounded", cursive;
+  margin-bottom: 0.4rem;
+  margin-top: 4rem;
+}
+
+.work-subheading {
+  font-size: 1.4rem;
+  color: #dedede;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.imageSec img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.imageSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+.imageSec:hover {
+  transform: scale(1.1);
+}
+
+.projectDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.detailsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid #545454;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: 28rem;
+}
+
+.info {
+  height: calc(100% - 3rem);
+  overflow-y: auto;
+  width: 100%;
+}
+
+.info p {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #c3c3c3;
+  font-family: "Tilliana Web", sans-serif;
+  line-height: 1.5;
+}
+
+.info h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #dedede;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.button-site {
+  display: grid;
+  place-items: center;
+  background-color: #dedede;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  min-height: 3rem;
+  border-radius: 0.3rem;
+}
+
+.button-site:hover {
+  color: #1f84ff;
+  cursor: pointer;
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.tech-used {
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 10%;
+  height: 2px;
+  background-color: #dedede;
+}
+
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
+  }
+
+  40% {
+    clip-path: circle(40%);
+  }
+
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+
+@media screen and (max-width: 850px) {
+  .work-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .work-subheading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .projectDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  .imageSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .detailsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .line {
+    height: 2rem;
+    width: 2px;
+    background-color: #dedede;
+  }
+
+  .tech-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+
+  .tech-used {
+    margin-bottom: 0.8rem;
+  }
+}

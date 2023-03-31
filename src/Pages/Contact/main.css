@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+body {
+  height: 100vh;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to left, #000000, #231f2b);
+  min-height: 90vh;
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.contact-left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: #eeeeee;
+  margin-top: 2rem;
+  margin-left: 9rem;
+  text-align: left;
+  width: 25%;
+  height: 78vh;
+}
+
+.contact-right {
+  margin: 2rem 6rem 2rem 2rem;
+  width: 33%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #3b3b3b;
+  background-color: transparent;
+  height: 82vh;
+  border-radius: 2rem;
+  border: 1px solid rgb(58, 58, 58);
+  width: 50%;
+}
+
+.mailBtn {
+  margin-right: 5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Average", serif;
+}
+
+.contact-left h1 {
+  margin-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-right a {
+  text-decoration: none;
+}
+
+.form-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(109, 109, 109, 0);
+  width: 100%;
+  margin: 1rem;
+}
+
+.contact-heading {
+  font-family: "Unbounded", cursive;
+  font-size: 3rem;
+  color: #dedede;
+  margin: 5rem 0 0 9rem;
+}
+
+.innerleft {
+  width: 100%;
+}
+
+.innerright {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.class-innersend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-left: 3rem;
+  margin-top: 1.4rem;
+  width: calc(100% - 5rem);
+  transition: 0.2s ease-in-out all;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
+.class-innersend:hover {
+  background-color: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  color: #eeeeee;
+}
+
+.class-innersend:hover h4 {
+  color: #eeeeee;
+}
+
+.class-innersend h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  color: #000000;
+  transition: 0.2s ease-in-out all;
+}
+
+.inner-heading {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.9rem;
+  text-align: left;
+  padding: 1rem;
+  margin-left: 2rem;
+  line-height: 3.8rem;
+}
+
+.desc {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1.1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  line-height: normal;
+}
+
+.class-innersend svg {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+input {
+  width: calc(100% - 5rem);
+  display: grid;
+  font-size: 1.5rem;
+  place-items: center;
+  padding: 1rem;
+  margin: 3rem 0 1rem 3rem;
+  height: 5rem;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  background-color: #ffffff00;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+::placeholder {
+  color: #a4a4a4;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.left-socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left-socials svg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0 !important;
+  margin: 0 1rem 0 1rem;
+  transition: transform ease-in-out 0.2s;
+}
+
+.social {
+  padding: 0 !important;
+}
+
+.left-socials svg:hover {
+  transform: scale(1.2);
+}
+
+.left-socials a {
+  all: unset;
+}
+
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(30%);
+  }
+
+  40% {
+    clip-path: circle(40%);
+  }
+
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .contact-right {
+    margin: 1rem;
+    text-align: center;
+    color: #3b3b3b;
+    height: auto;
+    border-radius: 1rem;
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+    display: grid;
+    font-size: 1.1rem;
+    place-items: center;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    height: 4rem;
+    color: #ffffff;
+    background-color: #ffffff00;
+    border: 1px solid #a4a4a4;
+    border-radius: 1rem;
+  }
+
+  .Mailcontact {
+    border-radius: 5rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    transition: 0.2s ease-in-out all;
+    color: #000000;
+    letter-spacing: 0.2rem;
+  }
+
+  .mailBtn {
+    margin-right: 1rem;
+    text-align: center;
+    font-family: "Average", serif;
+    width: 100%;
+  }
+
+  .Mailcontact>h3 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .contact-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeeeee;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .contact-left>h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #dedede;
+    margin: 1rem 0 1rem 0rem;
+  }
+
+  .class-innersend>h4 {
+    font-size: 1rem;
+    margin: 0;
+    margin-right: 0.8rem;
+  }
+
+  .class-innersend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    color: #444444;
+    width: 100%;
+    margin: auto;
+    transition: 0.2s ease-in-out all;
+    border-radius: 1rem;
+  }
+
+  .form-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(109, 109, 109, 0);
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .inner-heading {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 2.5rem;
+  }
+
+  .desc {
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-left: 0rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+
+  .class-innersend svg {
+    margin-bottom: 0rem;
+    font-size: 2rem;
+  }
+}

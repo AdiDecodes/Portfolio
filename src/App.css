@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tillana:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import "https://unpkg.com/transition-style";
+
+* {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e9e9e9 !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.pretext {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.primary {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(to left, #000000, #231f2b);
+}
+
+.primaryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  color: #dedede;
+}
+
+.textsection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #dedede;
+  font-size: 5.5rem;
+  font-family: "Righteous", cursive;
+  margin-bottom: 1rem;
+  transition: 0.5s ease-in-out all;
+}
+
+.textsection:hover {
+  color: #eea648;
+  transition: 0.5s ease-in-out all !important;
+  transform: scale(1.2) !important;
+}
+
+.primaryleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.2rem;
+  width: 60%;
+  margin: 9.3rem;
+}
+
+.primaryright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.about-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #e5e5e5;
+  font-size: 1.3rem;
+  margin: 1.3rem 0 0 0;
+  letter-spacing: 0.7px;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.span-name {
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+}
+
+.span-name>span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  transition: 0.5s ease-in all;
+}
+
+.span-name:hover {
+  cursor: default;
+}
+
+.Heading {
+  font-size: 8rem;
+  color: #dedede;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+.subheading {
+  font-size: 4rem;
+  color: #dedede;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.back-to-home:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out all;
+}
+
+.back-to-home {
+  font-family: "Karla", sans-serif;
+  transition: 0.3s ease-in-out all;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.projects {
+  background-image: linear-gradient(to left, #000000, #231f2b);
+  padding: 0rem 9rem 2rem 9rem;
+}
+
+.heading-project {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #dedede;
+  margin: 0 0 10rem 0;
+
+}
+
+.project-section-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.project-section-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10rem 0 8rem 0;
+}
+
+.project-section-2 .proj-img {
+  height: 25rem;
+  aspect-ratio: 2;
+  border-radius: 1rem;
+  transition: all ease-in-out 0.5s;
+  rotate: -3deg;
+}
+
+.proj-img {
+  height: 25rem;
+  aspect-ratio: 2;
+  border-radius: 1rem;
+  transition: all ease-in-out 0.5s;
+  rotate: 3deg;
+}
+
+.proj-img:hover {
+  /* height: 90vh; */
+  aspect-ratio: 2;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+.view-all {
+  color: #dedede;
+  font-size: 2rem;
+  font-family: "Tilliana Web", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+  margin: 0 0 5rem 0;
+}
+
+.view-all p {
+  all: unset;
+  transition: all ease-in-out 0.2s;
+  margin: 0 1rem 0 0;
+}
+
+.view-all:hover p {
+  margin: 0 2rem 0 0;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    line-height: normal;
+  }
+
+  .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: linear-gradient(to left, #000000, #231f2b);
+  }
+
+  .primaryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .primaryleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .primaryright {
+    height: 50vh;
+    margin: 0rem;
+    width: 100%;
+  }
+
+  .span-name>span {
+    text-align: center;
+    font-size: 2.3rem;
+    transition: 0.2s ease-in all;
+    width: 100%;
+  }
+
+  .primaryright img {
+    width: 100%;
+    border-radius: 50px;
+    pointer-events: none;
+  }
+
+  .imgsection {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    color: #dedede;
+  }
+
+  .rightHeader-l svg {
+    margin: 0px 1.7rem 0px 1.7rem;
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 25px;
+    transition: all 0.2s ease;
+  }
+
+  .rightHeader-l a {
+    display: none;
+    margin: 0px 1.7rem 0px 1.7rem;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Tillana", cursive;
+    transition: all 0.2s ease;
+  }
+
+  .textsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dedede;
+    font-size: 2.5rem;
+    font-family: "Righteous", cursive;
+    margin-bottom: 1rem;
+    transition: 0.5s ease-in-out all;
+  }
+
+  .pretext {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .span-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+  }
+
+
+  .projects {
+    background-image: linear-gradient(to left, #000000, #231f2b);
+    padding: 1rem;
+  }
+
+  .heading-project {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #dedede;
+    margin: 0 0 3rem 0;
+    text-align: center;
+
+  }
+
+  .project-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+  }
+
+  .project-section-2 .proj-img {
+    height: 11rem;
+    aspect-ratio: 2;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+    rotate: 0deg;
+  }
+
+  .proj-img {
+    height: 11rem;
+    aspect-ratio: 2;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+    rotate: 0deg;
+  }
+
+  .view-all {
+    color: #dedede;
+    font-size: 2rem;
+    font-family: "Tilliana Web", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+    margin: 0 0 5rem 0;
+    width: 100%;
+  }
+
+  .view-all p {
+    all: unset;
+    transition: all ease-in-out 0.2s;
+    margin: 0 1rem 0 0;
+  }
+
+  .view-all:hover p {
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+  }
+}
