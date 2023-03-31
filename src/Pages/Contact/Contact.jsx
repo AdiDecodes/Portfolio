@@ -15,10 +15,7 @@ import PuffLoader from "react-spinners/PuffLoader";
 import Header from "../Header/Header";
 
 const Contact = () => {
-  const url =
-    import.meta.env.MODE == "DEVELOPMENT".toLowerCase()
-      ? "localhost"
-      : import.meta.env.VITE_URL;
+  const url = import.meta.env.VITE_URL;
   useEffect(() => {
     AOS.init({ delay: 1000, duration: 1000 });
     window.scrollTo(0, 0);
@@ -115,7 +112,7 @@ const Contact = () => {
     if (validateEmail(email) && name.length >= 1 && message.length >= 1) {
       try {
         showToast("Sending the message..");
-        const response = await axios.post(`http://${url}:4000/sendmail`, data);
+        const response = await axios.post(`https://${url}:4000/sendmail`, data);
         if (response.status == 200) {
           console.log(response);
           updateToast("Message Sent", true);
