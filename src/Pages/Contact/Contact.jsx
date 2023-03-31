@@ -20,7 +20,6 @@ const Contact = () => {
     AOS.init({ delay: 1000, duration: 1000 });
     window.scrollTo(0, 0);
   }, []);
-  console.log(url);
 
   const toastRef = useRef(null);
 
@@ -112,18 +111,19 @@ const Contact = () => {
     if (validateEmail(email) && name.length >= 1 && message.length >= 1) {
       try {
         showToast("Sending the message..");
-        const response = await axios.post(`https://${url}/sendmail`, data);
+        const response = await axios.post(`https://${url}/`, data);
         if (response.status == 200) {
-          console.log(response);
           updateToast("Message Sent", true);
           resetInputs();
         } else {
           updateToast("Failed to send!", false);
+          console.log(response);
           resetInputs();
         }
       } catch (error) {
         if (error.request) {
           updateToast("Error occured! Try again", false);
+          console.log(response);
           resetInputs();
         }
       }
