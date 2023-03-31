@@ -112,7 +112,7 @@ const Contact = () => {
     if (validateEmail(email) && name.length >= 1 && message.length >= 1) {
       try {
         showToast("Sending the message..");
-        const response = await axios.post(`https://${url}:4000/sendmail`, data);
+        const response = await axios.post(`https://${url}/sendmail`, data);
         if (response.status == 200) {
           console.log(response);
           updateToast("Message Sent", true);
