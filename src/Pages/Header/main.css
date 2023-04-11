@@ -113,6 +113,8 @@
 }
 
 .side-items {
+    transform: translateY(100px);
+    opacity: 0;
     color: #232323;
     margin: 2rem;
     font-size: 2rem;

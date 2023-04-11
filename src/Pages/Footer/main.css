@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .footer {
   background-color: #ebebeb;
   width: 100%;
@@ -82,9 +84,18 @@
   transition: all ease-in-out 0.2s;
 }
 
+.credits {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
 .Footertitle {
-  font-size: 1.2rem;
+  display: flex;
+  font-size: 1.25rem;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   margin: 1.3rem 0 0 0;
 }
 
@@ -92,6 +103,61 @@
   background-color: #383045;
   color: white;
 }
+
+.loader {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  position: relative;
+  width: 20px;
+  height: 25px;
+  animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  background: #ff3c00;
+  width: 20px;
+  height: 29px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: 50% 68%;
+  box-shadow: 5px 4px 5px rgba(255, 41, 41, 0.267) inset;
+}
+
+.loader:after {
+  transform: rotate(-45deg);
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(0.95)
+  }
+
+  5% {
+    transform: scale(1.1)
+  }
+
+  39% {
+    transform: scale(0.85)
+  }
+
+  45% {
+    transform: scale(1)
+  }
+
+  60% {
+    transform: scale(0.95)
+  }
+
+  100% {
+    transform: scale(0.9)
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .footer {
@@ -190,5 +256,11 @@
 
   .Footertitle {
     margin-bottom: 3rem;
+  }
+
+  .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

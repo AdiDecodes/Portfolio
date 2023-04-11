@@ -11,6 +11,10 @@ import { VscHeartFilled } from "react-icons/vsc";
 const Footer = () => {
   let navigate = useNavigate();
 
+  const animation = () => {
+    return <span className="loader"></span>;
+  };
+
   return (
     <>
       <div className="footer">
@@ -47,8 +51,10 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            <div className="Footertitle">
-              Made with <VscHeartFilled color="red" size="22" /> By Aditya
+            <div className="credits">
+              <div className="Footertitle">
+                Made with <span class="loader"></span> by Aditya
+              </div>
             </div>
           </div>
         </div>

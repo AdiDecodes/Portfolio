@@ -1,15 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
+import gsap from "gsap";
 
 const Header = (props) => {
+  const t1 = gsap.timeline({ paused: true });
+  useEffect(() => {
+    t1.to(".side-items", {
+      y: "0",
+      opacity: "1",
+      ease: "Expo.easeOut",
+      stagger: 0.1,
+    });
+  });
+
   const [isSidebarOpen, setSidebar] = useState(false);
   const [name, setName] = useState("Aditya S.");
 
   const handleMenu = () => {
     setSidebar(!isSidebarOpen);
+    if (!isSidebarOpen) {
+      t1.play();
+    } else {
+      t1.reverse();
+    }
   };
 
   return (
