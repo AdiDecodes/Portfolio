@@ -10,8 +10,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
+import dg from "./assets/dg.jpeg";
 import cs from "./assets/cleverstudio.png";
-import sb from "./assets/superbattle.png";
 import { BsArrowRight } from "react-icons/bs";
 
 const Home = () => {
@@ -75,8 +75,15 @@ const Home = () => {
               data-aos-once="true"
               data-aos-delay="100"
             >
-              <img className="proj-img" src={sb} alt="" />
-              <div className="proj-title-1">SuperBattle</div>
+              <img
+                className="proj-img"
+                src={cs}
+                alt=""
+                onClick={() =>
+                  window.open("https://www.cleverstudio.in", "!blank")
+                }
+              />
+              <div className="proj-title-1">CleverStudio</div>
             </div>
             <div
               className="project-section-2"
@@ -84,8 +91,18 @@ const Home = () => {
               data-aos-once="true"
               data-aos-delay="200"
             >
-              <img className="proj-img" src={cs} alt="" />
-              <div className="proj-title-2">CleverStudio</div>
+              <img
+                className="proj-img"
+                src={dg}
+                alt=""
+                onClick={() =>
+                  window.open(
+                    "https://drop-and-go-frontend.vercel.app/",
+                    "!blank"
+                  )
+                }
+              />
+              <div className="proj-title-2">DROP-N-GO</div>
             </div>
             <div
               className="view-all"

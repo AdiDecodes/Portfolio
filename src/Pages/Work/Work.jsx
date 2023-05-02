@@ -3,6 +3,7 @@ import "./Work.css";
 import cs from "../../assets/cleverstudio.png";
 import sb from "../../assets/superbattle.png";
 import sc from "../../assets/skycloud.png";
+import dg from "../../assets/dg.jpeg";
 import vz from "../../assets/vidzy.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,6 +14,14 @@ const Work = () => {
   const [project, setProject] = useState([
     {
       id: 1,
+      title: "DROP-N-GO - File sharing App",
+      desc: `Drop-N-Go is a web based file sharing website that enable users to share files and methods to protect them using passcode.`,
+      image: dg,
+      url: "https://drop-and-go-frontend.vercel.app/",
+      techUsed: ["ReactJS", "Springboot"],
+    },
+    {
+      id: 2,
       title: "CleverStudio - Media Agency",
       desc: `Cleverstudio is the media agency that helps small businesses or
       Individuals to get digital resources and assets that they
@@ -22,7 +31,7 @@ const Work = () => {
       techUsed: ["HTML", "CSS", "Vanilla JS"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Vidzy - Fast Video Saver",
       desc: `VIDZY is an online video downloading website which allows users
       to download videos from YouTube & Facebook. Supports high quality downloads and can be saved locally`,
@@ -31,7 +40,7 @@ const Work = () => {
       techUsed: ["HTML", "CSS", "Vanilla JS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "SuperBattle - Esports Platform",
       desc: `SuperBattle is an Esports competitive platform that has multiple
       games available to play and compete with other players. Playing
@@ -42,7 +51,7 @@ const Work = () => {
       techUsed: ["HTML", "CSS", "Vanilla JS"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Skycloud - Weather Forecast",
       desc: `Skycloud is a website that serves local weather information
       right when and where you want it. With Skycloud, you can see
