@@ -86,9 +86,9 @@
 
 .credits {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 
 .Footertitle {

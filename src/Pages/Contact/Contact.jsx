@@ -15,7 +15,9 @@ import PuffLoader from "react-spinners/PuffLoader";
 import Header from "../Header/Header";
 
 const Contact = () => {
-  const url = import.meta.env.VITE_URL;
+  const serviceId = import.meta.env.VITE_serviceId;
+  const templateId = import.meta.env.VITE_templateId;
+  const userId = import.meta.env.VITE_userId;
   useEffect(() => {
     AOS.init({ delay: 1000, duration: 1000 });
     window.scrollTo(0, 0);
@@ -108,26 +110,37 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    var data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: userId,
+      template_params: {
+        name: name,
+        email: email,
+        message: message,
+      },
+    };
     if (validateEmail(email) && name.length >= 1 && message.length >= 1) {
-      try {
-        showToast("Sending the message..");
-        const response = await axios.post(`https://${url}/`, data);
-        if (response.status == 200) {
-          updateToast("Message Sent", true);
-          resetInputs();
-        } else {
-          updateToast("Failed to send!", false);
-          resetInputs();
-        }
-      } catch (error) {
-        if (error.request) {
-          updateToast("Error occured! Try again", false);
-          console.log(error);
-          resetInputs();
-        }
-      }
+      showToast("Sending the message..");
+      axios
+        .post("https://api.emailjs.com/api/v1.0/email/send", data)
+        .then((response) => {
+          if (response.status == 200) {
+            updateToast("Message Sent", true);
+            resetInputs();
+          } else {
+            updateToast("Failed to send!", false);
+            resetInputs();
+          }
+        })
+        .catch(function (error) {
+          if (error.request) {
+            updateToast("Error occured! Try again", false);
+            resetInputs();
+          }
+        });
     } else {
-      errorMsg("Invalid or Empty Inputs!");
+      errorMsg("Invalid Inputs!");
     }
   };
 
